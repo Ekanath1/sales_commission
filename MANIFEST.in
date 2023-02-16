@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sales_commission *.css
+recursive-include sales_commission *.csv
+recursive-include sales_commission *.html
+recursive-include sales_commission *.ico
+recursive-include sales_commission *.js
+recursive-include sales_commission *.json
+recursive-include sales_commission *.md
+recursive-include sales_commission *.png
+recursive-include sales_commission *.py
+recursive-include sales_commission *.svg
+recursive-include sales_commission *.txt
+recursive-exclude sales_commission *.pyc

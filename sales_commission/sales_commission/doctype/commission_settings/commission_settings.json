@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-17 15:02:28.769318",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_invoice_commission_item",
+  "commission_paid",
+  "consider_returns_upto",
+  "additional_salary_component",
+  "auto_submit_resulting_doctype",
+  "commission_calculated_upto"
+ ],
+ "fields": [
+  {
+   "fieldname": "purchase_invoice_commission_item",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice Commission Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "commission_paid",
+   "fieldtype": "Select",
+   "label": "Commission Paid ",
+   "options": "Monthly\nQuartely"
+  },
+  {
+   "fieldname": "consider_returns_upto",
+   "fieldtype": "Date",
+   "label": "Consider Returns Upto "
+  },
+  {
+   "fieldname": "additional_salary_component",
+   "fieldtype": "Link",
+   "label": "Additional Salary Component",
+   "options": "Salary Component"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_submit_resulting_doctype",
+   "fieldtype": "Check",
+   "label": "Auto Submit Resulting Doctype"
+  },
+  {
+   "fieldname": "commission_calculated_upto",
+   "fieldtype": "Date",
+   "label": "Commission Calculated Upto"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-02-17 15:02:28.769318",
+ "modified_by": "Administrator",
+ "module": "Sales Commission",
+ "name": "Commission Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

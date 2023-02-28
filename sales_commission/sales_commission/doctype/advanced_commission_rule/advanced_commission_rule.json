@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-14 14:59:24.074358",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "description",
+  "disable",
+  "applicable_doctype",
+  "commission",
+  "resulting_doctype",
+  "item_filter_section_section",
+  "item_filter",
+  "section_break_8",
+  "customer_filter",
+  "dynamic_filters_section",
+  "dynamic_filters_json",
+  "formula"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "applicable_doctype",
+   "fieldtype": "Link",
+   "label": "Applicable DocType",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Select",
+   "label": "Commission",
+   "options": "Sales Partner\nSales Person"
+  },
+  {
+   "fieldname": "resulting_doctype",
+   "fieldtype": "Link",
+   "label": "Resulting DocType",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_filter_section_section",
+   "fieldtype": "Section Break",
+   "label": "Item Filter Section"
+  },
+  {
+   "fieldname": "item_filter",
+   "fieldtype": "Code",
+   "label": "Item Filter",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Customer  Filter Section"
+  },
+  {
+   "fieldname": "customer_filter",
+   "fieldtype": "Code",
+   "label": "Customer Filter",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "dynamic_filters_json",
+   "fieldtype": "Code",
+   "label": "Dynamic Filters JSON",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "dynamic_filters_section",
+   "fieldtype": "Section Break",
+   "label": "Dynamic Filters Section"
+  },
+  {
+   "fieldname": "formula",
+   "fieldtype": "Code",
+   "label": "Formula"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-23 12:39:02.924557",
+ "modified_by": "Administrator",
+ "module": "Sales Commission",
+ "name": "Advanced Commission Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

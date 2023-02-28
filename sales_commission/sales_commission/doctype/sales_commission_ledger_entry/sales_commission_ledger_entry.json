@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-17 12:52:00.031713",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "advanced_commission_rule",
+  "commission",
+  "document_date",
+  "posting_date",
+  "dt",
+  "doctype_id",
+  "territory",
+  "territory_manager",
+  "customer",
+  "customer_name",
+  "item",
+  "item_name",
+  "item_group",
+  "brand",
+  "patner",
+  "amount",
+  "in_commission",
+  "out_commission",
+  "balance_commission"
+ ],
+ "fields": [
+  {
+   "fieldname": "advanced_commission_rule",
+   "fieldtype": "Link",
+   "label": "Advanced Commission Rule",
+   "options": "Advanced Commission Rule",
+   "read_only": 1
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Select",
+   "label": "Commission",
+   "options": "Sales Person\nSales Partner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Date",
+   "label": "Document Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dt",
+   "fieldtype": "Link",
+   "label": "DocType",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "territory_manager",
+   "fieldtype": "Link",
+   "label": "Territory Manager",
+   "options": "Sales Person",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fetch_if_empty": 1,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.brand",
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patner",
+   "fieldtype": "Select",
+   "label": "Patner",
+   "options": "Sales Person\nSales Partner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "in_commission",
+   "fieldtype": "Currency",
+   "label": "In Commission",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "out_commission",
+   "fieldtype": "Currency",
+   "label": "Out Commission",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "balance_commission",
+   "fieldtype": "Currency",
+   "label": "Balance Commission",
+   "read_only": 1
+  },
+  {
+   "fieldname": "doctype_id",
+   "fieldtype": "Dynamic Link",
+   "label": "DocType ID",
+   "options": "dt",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-17 14:17:02.122142",
+ "modified_by": "Administrator",
+ "module": "Sales Commission",
+ "name": "Sales Commission Ledger Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
